@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply text-slate-800;
+    font-family: "Inter", sans-serif;
+  }
+  .feature-logo {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 9rem;
+    pointer-events: none;
+    /* filter: grayscale(1) opacity(0.5);
+    mix-blend-mode: color-burn; */
+  }
+  .customer-logo {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 16rem;
+  }
+  .card-ico {
+    @apply h-9 w-9 mb-6;
+  }
+  .ico-service {
+    @apply rounded-md mb-8;
+  }
+  .stat-box {
+    @apply flex flex-col justify-center items-center;
+  }
+  .stat-no {
+    @apply xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-semibold text-sky-500 mb-4;
+  }
+  .stat-txt {
+    @apply sm:text-sm md:text-lg xl:text-lg 2xl:text-lg;
+  }
+  .float-txt {
+    @apply bg-sky-200 rounded-md px-1 flex flex-col justify-center items-center;
+    position: absolute;
+    top: -4rem;
+    left: 3rem;
+  }
+  .float-img {
+    @apply rounded-md h-10 border-2 border-sky-200;
+    position: absolute;
+    top: 0rem;
+    left: 12rem;
+  }
+  .img-test {
+    @apply absolute w-28;
+    right: 3rem;
+    bottom: -4rem;
+  }
+  .form-field {
+    @apply h-6 rounded-md px-3 xs:w-2/3 sm:w-max md:w-max lg:w-max xl:w-max 2xl:w-max;
+  }
+  .form-label {
+    @apply text-lg text-sky-900 mb-2;
+  }
+  .form-base {
+    @apply flex bg-sky-200 text-sky-900 rounded-md xs:p-5 sm:p-10 md:p-10 lg:p-10 xl:p-10 2xl:p-10 shadow-md;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(177, 221, 249, 0.925),
+        rgba(93, 151, 233, 0.925)
+      ),
+      url("./images/form-img.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-base {
+    @apply sm:px-5 md:px-20 lg:px-40 xl:px-40 py-20 flex;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.973),
+        rgba(93, 151, 233, 0.959)
+      ),
+      url("./images/one.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+  .hero-base-two {
+    @apply flex p-10 rounded-md flex-col gap-4 justify-center;
+  }
+  .form-grid {
+    @apply flex flex-wrap gap-10;
+  }
+  .form-box {
+    @apply h-6 w-6 accent-sky-500;
+  }
+  .card-base-test {
+    @apply bg-sky-100 shadow-md p-10 relative rounded-md;
+  }
+  .card-hov {
+    transition: all 0.3s;
+  }
+  .card-hov:hover {
+    @apply shadow-xl;
+    scale: 1.1;
+  }
+  .footer-container {
+    @apply flex flex-col gap-5 justify-center items-start;
+  }
+  .footer-ico {
+    @apply h-6 cursor-pointer;
+  }
+  .footer-container-base {
+    @apply xs:px-10 sm:px-20 md:px-20 lg:px-20 xl:px-20 2xl:px-20 p-10 grid gap-10 bg-slate-100 text-sm grid-cols-1;
+  }
 }
