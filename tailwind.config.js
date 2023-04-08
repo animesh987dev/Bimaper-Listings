@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "lko-img": "url('./images/lko.jpg')",
+      },
+    },
     screens: {
       xs: "375px",
       // => @media (min-width: 640px) { ... }

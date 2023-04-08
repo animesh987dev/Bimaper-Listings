@@ -20,7 +20,7 @@
   .customer-logo {
     aspect-ratio: 3/2;
     object-fit: contain;
-    width: 16rem;
+    height: 4rem;
   }
   .card-ico {
     @apply h-9 w-9 mb-6;
@@ -109,5 +109,9 @@
   }
   .footer-container-base {
     @apply xs:px-10 sm:px-20 md:px-20 lg:px-20 xl:px-20 2xl:px-20 p-10 grid gap-10 bg-slate-100 text-sm grid-cols-1;
+  }
+  .overlay-card{
+    @apply w-full h-full bg-gradient-to-t from-sky-800 top-0 right-0;
+    position: absolute;
   }
 }
