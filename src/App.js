@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import City from "./components/City";
 import Footer from "./components/Footer";
 import Listings from "./components/Listings";
+import Cta from "./components/Cta";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero></Hero>
       <City></City>
       <Listings></Listings>
+      <Cta></Cta>
       <Footer></Footer>
     </div>
   );

@@ -135,6 +135,16 @@ const Listings = () => {
       curGrad: "AA+",
       lastGrad: "AA",
     },
+    {
+      curR: 3,
+      lastR: 2,
+      img: p3,
+      name: "Jan Suvidha",
+      curEval: "INR 672,862M",
+      lastEval: "INR 638,826M",
+      curGrad: "AA+",
+      lastGrad: "AA",
+    },
   ];
 
   return (
@@ -144,7 +154,7 @@ const Listings = () => {
       </h2>
       <div className="flex items-center gap-2 mb-10">
         <input
-          className="border-4 text-xl pr-10 border-sky-300 rounded-md p-3 w-1/2"
+          className="border-4 text-xl pr-10 border-sky-300 rounded-md p-3 w-full"
           type="text"
           placeholder="Search a Brand"
         />
@@ -154,9 +164,9 @@ const Listings = () => {
       </div>
       <div className="flex flex-col">
         <div className="">
-          <p className="mb-5">Sponsored Listings</p>
-          <table className="w-full text-center mb-10">
-            <tr className=" bg-sky-500 border-sky-500">
+          <p className="mb-5">Listings</p>
+          <table className="w-full text-center">
+            <tr className="">
               <th className="text-slate-100 p-2">2023</th>
               <th className="text-slate-100 p-2">2022</th>
               <th className="text-slate-100 p-2">Logo</th>
@@ -167,9 +177,10 @@ const Listings = () => {
               <th className="text-slate-100 p-2">2022</th>
             </tr>
             {listDataSpon.map((item) => (
-              <tr className="">
-                <td className="">{item.curR}</td>
-                <td className="">{item.lastR}</td>
+              <tr className="spo">
+                <td colSpan={2} className="">
+                  Sponsored
+                </td>
                 <td className="">
                   <center>
                     <img className="customer-logo" src={item.img} alt="" />
@@ -182,21 +193,6 @@ const Listings = () => {
                 <td className="">{item.lastGrad}</td>
               </tr>
             ))}
-          </table>
-        </div>
-        <div className="">
-          <p className="mb-5">Listings</p>
-          <table className="w-full text-center">
-            <tr className=" bg-sky-500 border-sky-500">
-              <th className="text-slate-100 p-2">2023</th>
-              <th className="text-slate-100 p-2">2022</th>
-              <th className="text-slate-100 p-2">Logo</th>
-              <th className="text-slate-100 p-2">Name</th>
-              <th className="text-slate-100 p-2">2023</th>
-              <th className="text-slate-100 p-2">2022</th>
-              <th className="text-slate-100 p-2">2023</th>
-              <th className="text-slate-100 p-2">2022</th>
-            </tr>
             {listData.map((item) => (
               <tr className="">
                 <td className="">{item.curR}</td>
@@ -215,6 +211,14 @@ const Listings = () => {
             ))}
           </table>
         </div>
+      </div>
+      <div className="flex gap-10 mt-10">
+        <button className="bg-slate-100 hover:bg-slate-600 xs:text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg cursor-pointer px-5 py-2 text-sky-900 hover:text-slate-100 duration-500 rounded-md">
+          &larr; Prev
+        </button>
+        <button className="bg-sky-700 hover:bg-sky-500 duration-500 xs:text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg cursor-pointer px-5 py-2 text-slate-100 hover:text-slate-900 rounded-md">
+          Next &rarr;
+        </button>
       </div>
     </div>
   );

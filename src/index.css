@@ -114,4 +114,17 @@
     @apply w-full h-full bg-gradient-to-t from-sky-800 top-0 right-0;
     position: absolute;
   }
+  tr:nth-child(even){
+    @apply bg-slate-200;
+  }
+  tr:nth-child(odd){
+    @apply bg-slate-50;
+  }
+  tr:nth-child(1){
+    @apply bg-sky-500 border-sky-500;
+  }
+  .spo{
+    background-color: #bae5fdc2 !important;
+     
+  }
 }

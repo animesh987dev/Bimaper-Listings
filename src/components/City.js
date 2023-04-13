@@ -11,12 +11,6 @@ const City = () => {
     { name: "Lucknow", img: lko },
     { name: "Delhi", img: del },
     { name: "Mumbai", img: mum },
-    { name: "Lucknow", img: lko },
-    { name: "Delhi", img: del },
-    { name: "Mumbai", img: mum },
-    { name: "Lucknow", img: lko },
-    { name: "Delhi", img: del },
-    { name: "Mumbai", img: mum },
   ];
 
   const [width, setWidth] = useState(0);
