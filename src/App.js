@@ -7,7 +7,7 @@ import Cta from "./components/Cta";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Logo></Logo>
       <Hero></Hero>
       <City></City>

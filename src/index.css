@@ -55,7 +55,7 @@
     bottom: -4rem;
   }
   .form-field {
-    @apply h-6 rounded-md px-3 xs:w-2/3 sm:w-max md:w-max lg:w-max xl:w-max 2xl:w-max;
+    @apply h-12 rounded-md px-3 xs:w-[45%] sm:w-max md:w-max lg:w-max xl:w-max 2xl:w-max;
   }
   .form-label {
     @apply text-lg text-sky-900 mb-2;
@@ -86,7 +86,7 @@
     @apply flex p-10 rounded-md flex-col gap-4 justify-center;
   }
   .form-grid {
-    @apply flex flex-wrap gap-10;
+    @apply flex flex-wrap gap-y-10 xs:gap-x-5 sm:gap-x-10 md:gap-x-10 lg:gap-x-10 xl:gap-x-10 2xl:gap-x-10;
   }
   .form-box {
     @apply h-6 w-6 accent-sky-500;

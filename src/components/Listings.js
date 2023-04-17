@@ -148,7 +148,7 @@ const Listings = () => {
   ];
 
   return (
-    <div className="xs:px-10 sm:px-10 md:px-20 lg:px-40 xl:px-40 2xl:px-40 py-20">
+    <div className="xs:px-10 sm:px-10 md:px-20 lg:px-40 xl:px-40 2xl:px-40 py-20 overflow-scroll">
       <h2 className="font-bold xs:text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl mb-14 tracking-tighter">
         <span className="text-sky-500">Brand</span> listings
       </h2>
@@ -163,7 +163,7 @@ const Listings = () => {
         </button>
       </div>
       <div className="flex flex-col">
-        <div className="">
+        <div className="min-w-[806px]">
           <p className="mb-5">Listings</p>
           <table className="w-full text-center">
             <tr className="">

@@ -11,72 +11,56 @@ const Cta = () => {
           </p>
           <p className="text-md text-sky-900 mb-2">Brand information</p>
           <div className="form-grid mb-10 border-4 border-sky-900/20 rounded-md p-5">
-            <label htmlFor="" className="form-label">
-              Name &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              Email &nbsp;
-              <input type="email" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              Phone &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              Company Name &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              GST No. &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              State &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              City &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              Pincode &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              Pan No. &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label">
-              Aadhar No. &nbsp;
-              <input type="text" className="form-field" />
-            </label>
-            <label htmlFor="" className="form-label flex flex-wrap">
-              Address &nbsp;
-              <textarea
-                name=""
-                id=""
-                cols="15"
-                rows="2"
-                className="rounded-md"
-              ></textarea>
-            </label>
+            <input type="text" className="form-field" placeholder="Name" />
+            <input type="email" className="form-field" placeholder="E-mail" />
+            <input type="text" className="form-field" placeholder="Phone" />
+            <input
+              type="text"
+              className="form-field"
+              placeholder="Company Name"
+            />
+            <input type="text" className="form-field" placeholder="GST No." />
+            <input type="text" className="form-field" placeholder="State" />
+            <input type="text" className="form-field" placeholder="City" />
+            <input type="text" className="form-field" placeholder="Pincode" />
+            <input type="text" className="form-field" placeholder="Pan No." />
+            <input
+              type="text"
+              className="form-field"
+              placeholder="Aadhar No."
+            />
+            <input
+              type="text"
+              className="form-field"
+              placeholder="Nature of Work"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="15"
+              rows="2"
+              className="rounded-md px-2"
+              placeholder="Address"
+            ></textarea>
           </div>
           <div className="mb-10">
             <p className="text-md text-sky-900 mb-2">Account details</p>
-            <div className="flex flex-wrap gap-x-16 gap-y-5 border-4 border-sky-900/20 rounded-md p-5">
-              <label htmlFor="" className="form-label">
-                Account No. &nbsp;
-                <input type="text" className="form-field" />
-              </label>
-              <label htmlFor="" className="form-label">
-                Account Holder Name &nbsp;
-                <input type="text" className="form-field" />
-              </label>
-              <label htmlFor="" className="form-label">
-                IFSC Code &nbsp;
-                <input type="text" className="form-field" />
-              </label>
+            <div className="form-grid mb-10 border-4 border-sky-900/20 rounded-md p-5">
+              <input
+                type="text"
+                className="form-field"
+                placeholder="Account No."
+              />
+              <input
+                type="text"
+                className="form-field"
+                placeholder="Account Holder Name"
+              />
+              <input
+                type="text"
+                className="form-field"
+                placeholder="IFSC code"
+              />
             </div>
           </div>
           <div className="flex xs:gap-5 sm:gap-10 md:gap-10 lg:gap-10 xl:gap-10 2xl:gap-10">
